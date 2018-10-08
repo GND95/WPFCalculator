@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="451" Width="218.333" Loaded="Window_Loaded">
+    <Grid>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btn7_Click" FontSize="16"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Margin="140,60,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btn9_Click" FontSize="16"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Margin="75,60,0,0" VerticalAlignment="Top" Width="60" Height="50" RenderTransformOrigin="1.307,0.6" Click="btn8_Click" FontSize="16"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btn4_Click" FontSize="16"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Margin="140,123,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btn6_Click" FontSize="16"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Margin="75,123,0,0" VerticalAlignment="Top" Width="60" Height="50" RenderTransformOrigin="1.307,0.6" Click="btn5_Click" FontSize="16"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Margin="10,187,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btn1_Click" FontSize="16"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Margin="140,187,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btn3_Click" FontSize="16"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Margin="75,187,0,0" VerticalAlignment="Top" Width="60" Height="50" RenderTransformOrigin="1.307,0.6" Click="btn2_Click" FontSize="16"/>
+        <Button x:Name="btnPlus" Content="+" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btnPlus_Click" FontSize="16"/>
+        <Button x:Name="btnMinus" Content="-" HorizontalAlignment="Left" Margin="140,251,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btnMinus_Click" FontSize="16"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" Margin="75,251,0,0" VerticalAlignment="Top" Width="60" Height="50" RenderTransformOrigin="1.307,0.6" Click="btn0_Click" FontSize="16"/>
+        <Button x:Name="btnMultiply" Content="*" HorizontalAlignment="Left" Margin="10,315,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btnMultiply_Click" FontSize="16"/>
+        <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="140,315,0,0" VerticalAlignment="Top" Width="60" Height="50" Click="btnDivide_Click" FontSize="16"/>
+        <Button x:Name="btnDecimal" Content="." HorizontalAlignment="Left" Margin="75,315,0,0" VerticalAlignment="Top" Width="60" Height="50" RenderTransformOrigin="1.307,0.6" Click="btnDecimal_Click" FontSize="16"/>
+        <Label x:Name="lblInput" Content="" HorizontalAlignment="Left" Margin="0,25,0,0" VerticalAlignment="Top" Width="95" Height="30"/>
+        <Label x:Name="lblResult" Content="0" HorizontalAlignment="Left" Margin="117,25,0,0" VerticalAlignment="Top" Width="90" Height="30" FontSize="16"/>
+        <Label x:Name="lblResult_Copy1" Content="=" HorizontalAlignment="Left" Margin="95,25,0,0" VerticalAlignment="Top" Width="22" Height="30" FontSize="16"/>
+        <Label Content="Result:" HorizontalAlignment="Left" Margin="117,-1,0,0" VerticalAlignment="Top" Width="90" HorizontalContentAlignment="Center" FontSize="16"/>
+
+    </Grid>
+</Window>

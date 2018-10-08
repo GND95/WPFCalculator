@@ -22,7 +22,7 @@ namespace WpfApp1
     {
         public MainWindow()
         {
-            InitializeComponent();           // 
+            InitializeComponent();           
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -114,7 +114,14 @@ namespace WpfApp1
             S1.result = lblResult.Content.ToString();
             if (S1.add == true)
             {
-                lblResult.Content = (Convert.ToDouble(S1.result) + Convert.ToDouble(S1.input)).ToString();
+                try
+                {
+                    lblResult.Content = (Convert.ToDouble(S1.result) + Convert.ToDouble(S1.input)).ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid input", "Error");
+                }                
             }
          
             S1.input = "0";
@@ -131,7 +138,14 @@ namespace WpfApp1
             S1.result = lblResult.Content.ToString();
             if (S1.subtract == true)
             {
-                lblResult.Content = (Convert.ToDouble(S1.result) - Convert.ToDouble(S1.input)).ToString();
+                try
+                {
+                    lblResult.Content = (Convert.ToDouble(S1.result) - Convert.ToDouble(S1.input)).ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid input", "Error");
+                }                
             }
 
             S1.input = "0";
@@ -148,7 +162,14 @@ namespace WpfApp1
             S1.result = lblResult.Content.ToString();
             if (S1.multiply == true)
             {
-                lblResult.Content = (Convert.ToDouble(S1.result) * Convert.ToDouble(S1.input)).ToString();
+                try
+                {
+                    lblResult.Content = (Convert.ToDouble(S1.result) * Convert.ToDouble(S1.input)).ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid input", "Error");
+                }                
             }
 
             S1.input = "0";
@@ -165,7 +186,14 @@ namespace WpfApp1
             S1.result = lblResult.Content.ToString();
             if (S1.divide == true)
             {
-                lblResult.Content = (Convert.ToDouble(S1.result) / Convert.ToDouble(S1.input)).ToString();
+                try
+                {
+                    lblResult.Content = (Convert.ToDouble(S1.result) / Convert.ToDouble(S1.input)).ToString();
+                }
+                catch
+                {
+                    MessageBox.Show("Invalid input", "Error");
+                }                
             }
 
             S1.input = "0";
